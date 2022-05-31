@@ -42,3 +42,17 @@ margin-bottom: 15px;
 .screen-header__icons span {
     position: relative;
 }
+
+@keyframes rotateGear {
+    from {
+        transform: none;
+    }
+
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-gear:hover {
+    animation: rotateGear 1s linear infinite;
+}
